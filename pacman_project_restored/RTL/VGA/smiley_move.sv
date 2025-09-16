@@ -13,8 +13,12 @@ module	smiley_move	(
 					input	 logic clk,
 					input	 logic resetN,
 					input	 logic startOfFrame,      //short pulse every start of frame 30Hz 
-					input	 logic Y_direction_key,   //move Y Up   
-					input	 logic toggle_x_key,      //toggle X   
+//					input	 logic Y_direction_key,   //move Y Up 
+					input	 logic Y_up_key,
+					input	 logic Y_down_key,
+					input	 logic X_right_key,
+					input	 logic X_left_key,	
+//					input	 logic toggle_x_key,      //toggle X   
 					input  logic collision,         //collision if smiley hits an object
 					input  logic [2:0] HitEdgeCode, 
 					output logic signed 	[10:0] topLeftX, // output the top left corner 
@@ -27,8 +31,8 @@ module	smiley_move	(
 
 parameter int INITIAL_X = 280;
 parameter int INITIAL_Y = 185;
-parameter int INITIAL_X_SPEED = 40;
-parameter int INITIAL_Y_SPEED = 20;
+parameter int INITIAL_X_SPEED = 0;
+parameter int INITIAL_Y_SPEED = 0;
 parameter int Y_ACCEL = -10;
 
 const int MAX_Y_SPEED = 500;
@@ -74,7 +78,7 @@ int Yspeed  ;
 int Xposition ; //position   
 int Yposition ;  
 
-logic toggle_x_key_D ;
+//logic toggle_x_key_D ;
  
 
   logic [4:0] hit_reg = 5'b00000;
@@ -89,14 +93,14 @@ begin : fsm_sync_proc
 		Yspeed <= 0  ; 
 		Xposition <= 0  ; 
 		Yposition <= 0   ; 
-		toggle_x_key_D <= 0 ;
+//		toggle_x_key_D <= 0 ;
 		hit_reg <= 5'b0 ;	
 	
 	end 	
 	
 	else begin
 	
-		toggle_x_key_D <= toggle_x_key ;  //shift register to detect edge 
+//		toggle_x_key_D <= toggle_x_key ;  //shift register to detect edge 
 
 	
 		case(SM_Motion)
@@ -119,11 +123,21 @@ begin : fsm_sync_proc
 			MOVE_ST:  begin     // moving collecting colisions 
 		//------------
 		// keys direction change 
-				if (Y_direction_key && (Yspeed > 0 ) )//  while moving down
-					Yspeed <= -Yspeed;//+1 ; 
+				if (Y_down_key)//  while moving down //(Yspeed > 0 )
+					Yspeed <= 200; 
 					
-				if (toggle_x_key & !toggle_x_key_D) //rizing edge 
-					Xspeed <= -Xspeed ; // toggle direction 
+				else if (Y_up_key)
+					Yspeed <= -200;	
+					
+				else if (X_right_key)
+					Xspeed <= 200; // toggle direction 
+					
+				else if (X_left_key) //rizing edge 
+					Xspeed <= -200; // toggle direction 
+				else begin
+					Xspeed <= 0;
+					Yspeed <= 0;
+				end
 	
        // collcting collisions 	
 				if (collision) begin

@@ -4,20 +4,20 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (global
@@ -150,7 +150,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect 224 544 392 560)
+	(rect 224 576 392 592)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "collision " (rect 5 0 46 17)(font "Intel Clear" ))
 	(pt 168 8)
@@ -166,25 +166,57 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect 224 512 400 528)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "Y_direction_key" (rect 5 0 81 17)(font "Intel Clear" ))
-	(pt 176 8)
+	(rect 224 544 392 560)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "right_6" (rect 5 0 39 17)(font "Intel Clear" ))
+	(pt 168 8)
 	(drawing
-		(line (pt 92 12)(pt 117 12))
-		(line (pt 92 4)(pt 117 4))
-		(line (pt 121 8)(pt 176 8))
-		(line (pt 92 12)(pt 92 4))
-		(line (pt 117 4)(pt 121 8))
-		(line (pt 117 12)(pt 121 8))
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
 	(rect 224 528 392 544)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "toggle_x_key" (rect 5 0 69 17)(font "Intel Clear" ))
+	(text "down_2" (rect 5 0 43 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 224 512 392 528)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "up_8" (rect 5 0 29 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 224 560 392 576)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "left_4" (rect 5 0 34 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -387,9 +419,9 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 552 440 784 616)
+	(rect 552 440 784 648)
 	(text "smiley_move" (rect 5 0 72 12)(font "Arial" ))
-	(text "inst" (rect 8 160 25 172)(font "Arial" ))
+	(text "inst" (rect 8 192 25 204)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -414,74 +446,88 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 80)
 		(input)
-		(text "Y_direction_key" (rect 0 0 80 12)(font "Arial" ))
-		(text "Y_direction_key" (rect 21 75 101 87)(font "Arial" ))
+		(text "Y_up_key" (rect 0 0 50 12)(font "Arial" ))
+		(text "Y_up_key" (rect 21 75 71 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
 		(pt 0 96)
 		(input)
-		(text "toggle_x_key" (rect 0 0 66 12)(font "Arial" ))
-		(text "toggle_x_key" (rect 21 91 87 103)(font "Arial" ))
+		(text "Y_down_key" (rect 0 0 63 12)(font "Arial" ))
+		(text "Y_down_key" (rect 21 91 84 103)(font "Arial" ))
 		(line (pt 0 96)(pt 16 96))
 	)
 	(port
 		(pt 0 112)
 		(input)
-		(text "collision" (rect 0 0 38 12)(font "Arial" ))
-		(text "collision" (rect 21 107 59 119)(font "Arial" ))
+		(text "X_right_key" (rect 0 0 57 12)(font "Arial" ))
+		(text "X_right_key" (rect 21 107 78 119)(font "Arial" ))
 		(line (pt 0 112)(pt 16 112))
 	)
 	(port
 		(pt 0 128)
 		(input)
+		(text "X_left_key" (rect 0 0 53 12)(font "Arial" ))
+		(text "X_left_key" (rect 21 123 74 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "collision" (rect 0 0 38 12)(font "Arial" ))
+		(text "collision" (rect 21 139 59 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
 		(text "HitEdgeCode[2..0]" (rect 0 0 90 12)(font "Arial" ))
-		(text "HitEdgeCode[2..0]" (rect 21 123 111 135)(font "Arial" ))
-		(line (pt 0 128)(pt 16 128)(line_width 3))
+		(text "HitEdgeCode[2..0]" (rect 21 155 111 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
 	)
 	(port
 		(pt 232 32)
 		(output)
 		(text "topLeftX[10..0]" (rect 0 0 73 12)(font "Arial" ))
-		(text "topLeftX[10..0]" (rect 150 27 223 39)(font "Arial" ))
+		(text "topLeftX[10..0]" (rect 150 27 211 39)(font "Arial" ))
 		(line (pt 232 32)(pt 216 32)(line_width 3))
 	)
 	(port
 		(pt 232 48)
 		(output)
 		(text "topLeftY[10..0]" (rect 0 0 75 12)(font "Arial" ))
-		(text "topLeftY[10..0]" (rect 148 43 223 55)(font "Arial" ))
+		(text "topLeftY[10..0]" (rect 148 43 211 55)(font "Arial" ))
 		(line (pt 232 48)(pt 216 48)(line_width 3))
 	)
 	(parameter
 		"INITIAL_X"
-		"initial_x"
+		"100"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"INITIAL_Y"
-		"initial_y"
+		"100"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"INITIAL_X_SPEED"
-		"initial_x_speed"
+		"0"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"INITIAL_Y_SPEED"
-		"initial_y_speed"
+		"0"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"Y_ACCEL"
-		"-2"
+		"0"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 216 160))
+		(rectangle (rect 16 16 216 192))
 	)
-	(annotation_block (parameter)(rect 552 288 809 402))
+	(annotation_block (parameter)(rect 552 288 760 402))
 )
 (connector
 	(text "clk" (rect 880 392 894 409)(font "Intel Clear" ))
@@ -532,34 +578,9 @@ https://fpgasoftware.intel.com/eula.
 	(pt 552 472)
 )
 (connector
-	(pt 504 568)
-	(pt 552 568)
-	(bus)
-)
-(connector
-	(pt 504 656)
-	(pt 504 568)
-	(bus)
-)
-(connector
 	(text "startOfFrame" (rect 472 488 535 505)(font "Intel Clear" ))
 	(pt 392 504)
 	(pt 552 504)
-)
-(connector
-	(text "Y_direction_key" (rect 461 504 537 521)(font "Intel Clear" ))
-	(pt 400 520)
-	(pt 552 520)
-)
-(connector
-	(text "toggle_x_key" (rect 472 520 536 537)(font "Intel Clear" ))
-	(pt 392 536)
-	(pt 552 536)
-)
-(connector
-	(text "collision " (rect 481 536 522 553)(font "Intel Clear" ))
-	(pt 392 552)
-	(pt 552 552)
 )
 (connector
 	(text "SmileyTLX[10..0]" (rect 796 456 877 473)(font "Intel Clear" ))
@@ -620,6 +641,36 @@ https://fpgasoftware.intel.com/eula.
 	(pt 1504 408)
 	(pt 1576 408)
 	(bus)
+)
+(connector
+	(pt 504 656)
+	(pt 504 600)
+	(bus)
+)
+(connector
+	(pt 504 600)
+	(pt 552 600)
+	(bus)
+)
+(connector
+	(pt 552 536)
+	(pt 392 536)
+)
+(connector
+	(pt 392 552)
+	(pt 552 552)
+)
+(connector
+	(pt 552 520)
+	(pt 392 520)
+)
+(connector
+	(pt 392 568)
+	(pt 552 568)
+)
+(connector
+	(pt 552 584)
+	(pt 392 584)
 )
 (text "  " (rect 24 624 31 643)(font "Intel Clear" (font_size 8)))
 (text "   " (rect 144 664 154 683)(font "Intel Clear" (font_size 8)))
