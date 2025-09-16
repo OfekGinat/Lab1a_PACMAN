@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab1Demo
-Sat Sep 13 17:56:09 2025
+Tue Sep 16 14:44:47 2025
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -25,7 +25,7 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  17. Multiplexer Restructuring Statistics (Restructuring Performed)
  18. Source assignments for TOP_KBD:inst16|KBDINTF:inst
  19. Source assignments for random:inst19
- 20. Source assignments for LPM_ROM:inst5|altrom:srom|altsyncram:rom_block|altsyncram_8071:auto_generated
+ 20. Source assignments for LPM_ROM:inst5|altrom:srom|altsyncram:rom_block|altsyncram_ge71:auto_generated
  21. Parameter Settings for User Entity Instance: back_ground_draw:inst4
  22. Parameter Settings for User Entity Instance: CLK_31P5:inst7|CLK_31P5_0002:clk_31p5_inst|altera_pll:altera_pll_i
  23. Parameter Settings for User Entity Instance: Smiley_Block_T:inst1
@@ -75,7 +75,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Sep 13 17:56:09 2025       ;
+; Analysis & Synthesis Status     ; Successful - Tue Sep 16 14:44:47 2025       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; Lab1Demo                                    ;
 ; Top-level Entity Name           ; TOP_VGA_DEMO_KBD                            ;
@@ -253,8 +253,8 @@ agreement for further details.
 ; a_rdenreg.inc                                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_rdenreg.inc                                                     ;          ;
 ; altram.inc                                                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc                                                        ;          ;
 ; altdpram.inc                                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc                                                      ;          ;
-; db/altsyncram_8071.tdf                                     ; yes             ; Auto-Generated Megafunction            ; C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/db/altsyncram_8071.tdf                                     ;          ;
-; RTL/VGA_BG.mif                                             ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/RTL/VGA_BG.mif                                             ;          ;
+; db/altsyncram_ge71.tdf                                     ; yes             ; Auto-Generated Megafunction            ; C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/db/altsyncram_ge71.tdf                                     ;          ;
+; rtl/smiley_mif.mif                                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/rtl/smiley_mif.mif                                         ;          ;
 ; db/decode_s2a.tdf                                          ; yes             ; Auto-Generated Megafunction            ; C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/db/decode_s2a.tdf                                          ;          ;
 ; db/mux_jhb.tdf                                             ; yes             ; Auto-Generated Megafunction            ; C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/db/mux_jhb.tdf                                             ;          ;
 +------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------+----------+
@@ -265,14 +265,14 @@ agreement for further details.
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                             ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1434                                                                              ;
+; Estimate of Logic utilization (ALMs needed) ; 1292                                                                              ;
 ;                                             ;                                                                                   ;
-; Combinational ALUT usage for logic          ; 2007                                                                              ;
-;     -- 7 input functions                    ; 64                                                                                ;
-;     -- 6 input functions                    ; 791                                                                               ;
-;     -- 5 input functions                    ; 250                                                                               ;
-;     -- 4 input functions                    ; 256                                                                               ;
-;     -- <=3 input functions                  ; 646                                                                               ;
+; Combinational ALUT usage for logic          ; 1845                                                                              ;
+;     -- 7 input functions                    ; 52                                                                                ;
+;     -- 6 input functions                    ; 680                                                                               ;
+;     -- 5 input functions                    ; 245                                                                               ;
+;     -- 4 input functions                    ; 232                                                                               ;
+;     -- <=3 input functions                  ; 636                                                                               ;
 ;                                             ;                                                                                   ;
 ; Dedicated logic registers                   ; 543                                                                               ;
 ;                                             ;                                                                                   ;
@@ -287,8 +287,8 @@ agreement for further details.
 ;                                             ;                                                                                   ;
 ; Maximum fan-out node                        ; CLK_31P5:inst7|CLK_31P5_0002:clk_31p5_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
 ; Maximum fan-out                             ; 866                                                                               ;
-; Total fan-out                               ; 15448                                                                             ;
-; Average fan-out                             ; 5.17                                                                              ;
+; Total fan-out                               ; 14548                                                                             ;
+; Average fan-out                             ; 5.15                                                                              ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 
 
@@ -297,9 +297,9 @@ agreement for further details.
 +---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                    ; Entity Name            ; Library Name ;
 +---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |TOP_VGA_DEMO_KBD                                       ; 2007 (1)            ; 543 (0)                   ; 2457600           ; 0          ; 62   ; 0            ; |TOP_VGA_DEMO_KBD                                                                                                      ; TOP_VGA_DEMO_KBD       ; work         ;
-;    |AUDIO:inst18|                                       ; 224 (0)             ; 142 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18                                                                                         ; AUDIO                  ; work         ;
-;       |ToneDecoder:inst4|                               ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|ToneDecoder:inst4                                                                       ; ToneDecoder            ; work         ;
+; |TOP_VGA_DEMO_KBD                                       ; 1845 (1)            ; 543 (0)                   ; 2457600           ; 0          ; 62   ; 0            ; |TOP_VGA_DEMO_KBD                                                                                                      ; TOP_VGA_DEMO_KBD       ; work         ;
+;    |AUDIO:inst18|                                       ; 222 (0)             ; 142 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18                                                                                         ; AUDIO                  ; work         ;
+;       |ToneDecoder:inst4|                               ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|ToneDecoder:inst4                                                                       ; ToneDecoder            ; work         ;
 ;       |addr_counter:inst9|                              ; 10 (10)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|addr_counter:inst9                                                                      ; addr_counter           ; work         ;
 ;       |audio_codec_controller:inst|                     ; 123 (0)             ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|audio_codec_controller:inst                                                             ; audio_codec_controller ; work         ;
 ;          |CLOCK_500:CLOCK_500_inst|                     ; 32 (32)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|audio_codec_controller:inst|CLOCK_500:CLOCK_500_inst                                    ; CLOCK_500              ; work         ;
@@ -310,8 +310,8 @@ agreement for further details.
 ;    |CLK_31P5:inst7|                                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|CLK_31P5:inst7                                                                                       ; CLK_31P5               ; CLK_31P5     ;
 ;       |CLK_31P5_0002:clk_31p5_inst|                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|CLK_31P5:inst7|CLK_31P5_0002:clk_31p5_inst                                                           ; CLK_31P5_0002          ; CLK_31P5     ;
 ;          |altera_pll:altera_pll_i|                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|CLK_31P5:inst7|CLK_31P5_0002:clk_31p5_inst|altera_pll:altera_pll_i                                   ; altera_pll             ; work         ;
-;    |HART_DISPLAY:inst12|                                ; 334 (0)             ; 26 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|HART_DISPLAY:inst12                                                                                  ; HART_DISPLAY           ; work         ;
-;       |HartsMatrixBitMap:inst6|                         ; 324 (324)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|HART_DISPLAY:inst12|HartsMatrixBitMap:inst6                                                          ; HartsMatrixBitMap      ; work         ;
+;    |HART_DISPLAY:inst12|                                ; 181 (0)             ; 26 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|HART_DISPLAY:inst12                                                                                  ; HART_DISPLAY           ; work         ;
+;       |HartsMatrixBitMap:inst6|                         ; 171 (171)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|HART_DISPLAY:inst12|HartsMatrixBitMap:inst6                                                          ; HartsMatrixBitMap      ; work         ;
 ;       |square_object:inst11|                            ; 10 (10)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|HART_DISPLAY:inst12|square_object:inst11                                                             ; square_object          ; work         ;
 ;    |NumbersBitMap:inst15|                               ; 165 (165)           ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|NumbersBitMap:inst15                                                                                 ; NumbersBitMap          ; work         ;
 ;    |SEG7:inst10|                                        ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|SEG7:inst10                                                                                          ; SEG7                   ; work         ;
@@ -326,31 +326,30 @@ agreement for further details.
 ;          |lpf:inst5|                                    ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|KBDINTF:inst|lpf:inst5                                                                ; lpf                    ; work         ;
 ;       |keyPad_decoder:inst2|                            ; 29 (29)             ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|keyPad_decoder:inst2                                                                  ; keyPad_decoder         ; work         ;
 ;    |VGA_Controller:inst|                                ; 94 (94)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|VGA_Controller:inst                                                                                  ; VGA_Controller         ; work         ;
-;    |back_ground_draw:inst4|                             ; 47 (47)             ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|back_ground_draw:inst4                                                                               ; back_ground_draw       ; work         ;
+;    |back_ground_draw:inst4|                             ; 48 (48)             ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|back_ground_draw:inst4                                                                               ; back_ground_draw       ; work         ;
 ;    |game_controller:inst11|                             ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|game_controller:inst11                                                                               ; game_controller        ; work         ;
-;    |lpm_rom:inst5|                                      ; 64 (0)              ; 6 (0)                     ; 2457600           ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5                                                                                        ; lpm_rom                ; work         ;
-;       |altrom:srom|                                     ; 64 (0)              ; 6 (0)                     ; 2457600           ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom                                                                            ; altrom                 ; work         ;
-;          |altsyncram:rom_block|                         ; 64 (0)              ; 6 (0)                     ; 2457600           ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block                                                       ; altsyncram             ; work         ;
-;             |altsyncram_8071:auto_generated|            ; 64 (0)              ; 6 (6)                     ; 2457600           ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_8071:auto_generated                        ; altsyncram_8071        ; work         ;
-;                |decode_s2a:rden_decode|                 ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_8071:auto_generated|decode_s2a:rden_decode ; decode_s2a             ; work         ;
-;                |mux_jhb:mux2|                           ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_8071:auto_generated|mux_jhb:mux2           ; mux_jhb                ; work         ;
+;    |lpm_rom:inst5|                                      ; 38 (0)              ; 6 (0)                     ; 2457600           ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5                                                                                        ; lpm_rom                ; work         ;
+;       |altrom:srom|                                     ; 38 (0)              ; 6 (0)                     ; 2457600           ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom                                                                            ; altrom                 ; work         ;
+;          |altsyncram:rom_block|                         ; 38 (0)              ; 6 (0)                     ; 2457600           ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block                                                       ; altsyncram             ; work         ;
+;             |altsyncram_ge71:auto_generated|            ; 38 (0)              ; 6 (6)                     ; 2457600           ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_ge71:auto_generated                        ; altsyncram_ge71        ; work         ;
+;                |decode_s2a:rden_decode|                 ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_ge71:auto_generated|decode_s2a:rden_decode ; decode_s2a             ; work         ;
 ;    |melody_player_1:inst13|                             ; 156 (71)            ; 53 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|melody_player_1:inst13                                                                               ; melody_player_1        ; work         ;
 ;       |JukeBox1:JukeBox1|                               ; 46 (46)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|melody_player_1:inst13|JukeBox1:JukeBox1                                                             ; JukeBox1               ; work         ;
 ;       |Mili_sec_counter:mili_sec_counter_inst|          ; 39 (39)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|melody_player_1:inst13|Mili_sec_counter:mili_sec_counter_inst                                        ; Mili_sec_counter       ; work         ;
-;    |objects_mux:inst9|                                  ; 100 (100)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|objects_mux:inst9                                                                                    ; objects_mux            ; work         ;
+;    |objects_mux:inst9|                                  ; 118 (118)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|objects_mux:inst9                                                                                    ; objects_mux            ; work         ;
 ;    |random:inst19|                                      ; 21 (21)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|random:inst19                                                                                        ; random                 ; work         ;
 ;    |square_object:inst17|                               ; 30 (30)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|square_object:inst17                                                                                 ; square_object          ; work         ;
 +---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                              ;
-+------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+----------------+
-; Name                                                                                     ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF            ;
-+------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+----------------+
-; lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_8071:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 307200       ; 8            ; --           ; --           ; 2457600 ; RTL/VGA_BG.mif ;
-+------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                  ;
++------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+--------------------+
+; Name                                                                                     ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF                ;
++------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+--------------------+
+; lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_ge71:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 307200       ; 8            ; --           ; --           ; 2457600 ; RTL/smiley_MIF.mif ;
++------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+--------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -1196,13 +1195,13 @@ Encoding Type:  One-Hot
 ; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|melody_player_1:inst13|noteTimeCounter[8]                                                                       ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|melody_player_1:inst13|noteTimeCounter[0]                                                                       ;
 ; 21:1               ; 31 bits   ; 434 LEs       ; 31 LEs               ; 403 LEs                ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smiley_move:inst|Xspeed[18]                                                                ;
-; 21:1               ; 2 bits    ; 28 LEs        ; 24 LEs               ; 4 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smileyBitMap:inst1|HitEdgeCode[1]                                                          ;
+; 21:1               ; 2 bits    ; 28 LEs        ; 24 LEs               ; 4 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smileyBitMap:inst1|HitEdgeCode[0]                                                          ;
 ; 23:1               ; 30 bits   ; 450 LEs       ; 60 LEs               ; 390 LEs                ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smiley_move:inst|Yspeed[4]                                                                 ;
-; 37:1               ; 8 bits    ; 192 LEs       ; 192 LEs              ; 0 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|objects_mux:inst9|RGBOut[2]                                                                                     ;
-; 10:1               ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|keyPad_decoder:inst2|key[3]                                                                      ;
+; 36:1               ; 8 bits    ; 192 LEs       ; 192 LEs              ; 0 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|objects_mux:inst9|RGBOut[2]                                                                                     ;
+; 10:1               ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|keyPad_decoder:inst2|key[0]                                                                      ;
 ; 8:1                ; 5 bits    ; 25 LEs        ; 10 LEs               ; 15 LEs                 ; Yes        ; |TOP_VGA_DEMO_KBD|melody_player_1:inst13|noteTimeCounter[5]                                                                       ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_8071:auto_generated|mux_jhb:mux2|l3_w5_n4_mux_dataout ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |TOP_VGA_DEMO_KBD|melody_player_1:inst13|Selector18                                                                               ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_ge71:auto_generated|mux_jhb:mux2|l3_w1_n4_mux_dataout ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |TOP_VGA_DEMO_KBD|melody_player_1:inst13|Selector15                                                                               ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 6 LEs                ; 4 LEs                  ; No         ; |TOP_VGA_DEMO_KBD|melody_player_1:inst13|Selector17                                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
@@ -1538,7 +1537,7 @@ Encoding Type:  One-Hot
 
 
 +------------------------------------------------------------------------------------------------------+
-; Source assignments for LPM_ROM:inst5|altrom:srom|altsyncram:rom_block|altsyncram_8071:auto_generated ;
+; Source assignments for LPM_ROM:inst5|altrom:srom|altsyncram:rom_block|altsyncram_ge71:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                     ;
 +---------------------------------+--------------------+------+----------------------------------------+
@@ -1922,23 +1921,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_ROM:inst5 ;
-+------------------------+----------------+------------------+
-; Parameter Name         ; Value          ; Type             ;
-+------------------------+----------------+------------------+
-; LPM_WIDTH              ; 8              ; Untyped          ;
-; LPM_WIDTHAD            ; 19             ; Untyped          ;
-; LPM_NUMWORDS           ; 307200         ; Untyped          ;
-; LPM_ADDRESS_CONTROL    ; REGISTERED     ; Untyped          ;
-; LPM_OUTDATA            ; UNREGISTERED   ; Untyped          ;
-; LPM_FILE               ; RTL/VGA_BG.mif ; Untyped          ;
-; DEVICE_FAMILY          ; Cyclone V      ; Untyped          ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY       ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY     ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE     ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE   ;
-+------------------------+----------------+------------------+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_ROM:inst5   ;
++------------------------+--------------------+----------------+
+; Parameter Name         ; Value              ; Type           ;
++------------------------+--------------------+----------------+
+; LPM_WIDTH              ; 8                  ; Untyped        ;
+; LPM_WIDTHAD            ; 19                 ; Untyped        ;
+; LPM_NUMWORDS           ; 307200             ; Untyped        ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED         ; Untyped        ;
+; LPM_OUTDATA            ; UNREGISTERED       ; Untyped        ;
+; LPM_FILE               ; RTL/smiley_MIF.mif ; Untyped        ;
+; DEVICE_FAMILY          ; Cyclone V          ; Untyped        ;
+; AUTO_CARRY_CHAINS      ; ON                 ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS   ; OFF                ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS    ; ON                 ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS ; OFF                ; IGNORE_CASCADE ;
++------------------------+--------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2028,23 +2027,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR SLD      ; 1                           ;
 ;     plain             ; 7                           ;
 ; arriav_io_obuf        ; 8                           ;
-; arriav_lcell_comb     ; 1972                        ;
+; arriav_lcell_comb     ; 1810                        ;
 ;     arith             ; 414                         ;
 ;         0 data inputs ; 5                           ;
 ;         1 data inputs ; 294                         ;
 ;         2 data inputs ; 67                          ;
 ;         4 data inputs ; 18                          ;
 ;         5 data inputs ; 30                          ;
-;     extend            ; 64                          ;
-;         7 data inputs ; 64                          ;
-;     normal            ; 1494                        ;
+;     extend            ; 52                          ;
+;         7 data inputs ; 52                          ;
+;     normal            ; 1344                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 26                          ;
-;         2 data inputs ; 77                          ;
-;         3 data inputs ; 174                         ;
-;         4 data inputs ; 227                         ;
-;         5 data inputs ; 207                         ;
-;         6 data inputs ; 781                         ;
+;         2 data inputs ; 76                          ;
+;         3 data inputs ; 165                         ;
+;         4 data inputs ; 203                         ;
+;         5 data inputs ; 202                         ;
+;         6 data inputs ; 670                         ;
 ; blackbox              ; 1                           ;
 ;         BDINTF:inst   ; 1                           ;
 ; boundary_port         ; 62                          ;
@@ -2052,7 +2051,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 304                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 4.31                        ;
+; Average LUT depth     ; 4.22                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2061,7 +2060,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:12     ;
+; Top            ; 00:00:09     ;
 +----------------+--------------+
 
 
@@ -2071,7 +2070,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Sep 13 17:55:41 2025
+    Info: Processing started: Tue Sep 16 14:44:25 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1Demo -c Lab1Demo
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/audio/mili_sec_counter.sv
@@ -2149,7 +2148,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file rtl/vga
 Warning (10236): Verilog HDL Implicit Net warning at audio_codec_controller.sv(61): created implicit net for "CLOCK_500_ena" File: C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/RTL/AUDIO/audio_codec_controller/audio_codec_controller.sv Line: 61
 Warning (10236): Verilog HDL Implicit Net warning at audio_codec_controller.sv(63): created implicit net for "CLOCK_SDAT_ena" File: C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/RTL/AUDIO/audio_codec_controller/audio_codec_controller.sv Line: 63
 Info (12127): Elaborating entity "TOP_VGA_DEMO_KBD" for the top level hierarchy
-Warning (275006): Can't find a definition for parameter LPM_FILE -- assuming RTL/VGA_BG.mif was intended to be a quoted string
+Warning (275006): Can't find a definition for parameter LPM_FILE -- assuming RTL/smiley_MIF.mif was intended to be a quoted string
 Warning (275004): Undeclared parameter ON
 Warning (275006): Can't find a definition for parameter AUTO_CARRY_CHAINS -- assuming ON was intended to be a quoted string
 Warning (275004): Undeclared parameter ON
@@ -2274,7 +2273,7 @@ Info (12133): Instantiated megafunction "LPM_ROM:inst5" with the following param
     Info (12134): Parameter "IGNORE_CARRY_BUFFERS" = "OFF"
     Info (12134): Parameter "IGNORE_CASCADE_BUFFERS" = "OFF"
     Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
-    Info (12134): Parameter "LPM_FILE" = "RTL/VGA_BG.mif"
+    Info (12134): Parameter "LPM_FILE" = "RTL/smiley_MIF.mif"
     Info (12134): Parameter "LPM_NUMWORDS" = "307200"
     Info (12134): Parameter "LPM_OUTDATA" = "UNREGISTERED"
     Info (12134): Parameter "LPM_WIDTH" = "8"
@@ -2283,15 +2282,15 @@ Info (12128): Elaborating entity "altrom" for hierarchy "LPM_ROM:inst5|altrom:sr
 Info (12131): Elaborated megafunction instantiation "LPM_ROM:inst5|altrom:srom", which is child of megafunction instantiation "LPM_ROM:inst5" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_rom.tdf Line: 55
 Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_ROM:inst5|altrom:srom|altsyncram:rom_block" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.tdf Line: 89
 Info (12131): Elaborated megafunction instantiation "LPM_ROM:inst5|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "LPM_ROM:inst5" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.tdf Line: 89
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8071.tdf
-    Info (12023): Found entity 1: altsyncram_8071 File: C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/db/altsyncram_8071.tdf Line: 32
-Info (12128): Elaborating entity "altsyncram_8071" for hierarchy "LPM_ROM:inst5|altrom:srom|altsyncram:rom_block|altsyncram_8071:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ge71.tdf
+    Info (12023): Found entity 1: altsyncram_ge71 File: C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/db/altsyncram_ge71.tdf Line: 32
+Info (12128): Elaborating entity "altsyncram_ge71" for hierarchy "LPM_ROM:inst5|altrom:srom|altsyncram:rom_block|altsyncram_ge71:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_s2a.tdf
     Info (12023): Found entity 1: decode_s2a File: C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/db/decode_s2a.tdf Line: 23
-Info (12128): Elaborating entity "decode_s2a" for hierarchy "LPM_ROM:inst5|altrom:srom|altsyncram:rom_block|altsyncram_8071:auto_generated|decode_s2a:rden_decode" File: C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/db/altsyncram_8071.tdf Line: 40
+Info (12128): Elaborating entity "decode_s2a" for hierarchy "LPM_ROM:inst5|altrom:srom|altsyncram:rom_block|altsyncram_ge71:auto_generated|decode_s2a:rden_decode" File: C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/db/altsyncram_ge71.tdf Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_jhb.tdf
     Info (12023): Found entity 1: mux_jhb File: C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/db/mux_jhb.tdf Line: 23
-Info (12128): Elaborating entity "mux_jhb" for hierarchy "LPM_ROM:inst5|altrom:srom|altsyncram:rom_block|altsyncram_8071:auto_generated|mux_jhb:mux2" File: C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/db/altsyncram_8071.tdf Line: 41
+Info (12128): Elaborating entity "mux_jhb" for hierarchy "LPM_ROM:inst5|altrom:srom|altsyncram:rom_block|altsyncram_ge71:auto_generated|mux_jhb:mux2" File: C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/db/altsyncram_ge71.tdf Line: 41
 Info (12128): Elaborating entity "AUDIO" for hierarchy "AUDIO:inst18"
 Info (12128): Elaborating entity "audio_codec_controller" for hierarchy "AUDIO:inst18|audio_codec_controller:inst"
 Warning (10230): Verilog HDL assignment warning at audio_codec_controller.sv(68): truncated value with size 32 to match size of target (1) File: C:/Users/ginat/Documents/Lab1a_PACMAN/pacman_project_restored/RTL/AUDIO/audio_codec_controller/audio_codec_controller.sv Line: 68
@@ -2390,17 +2389,17 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 8 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "AUD_ADCDAT"
-Info (21057): Implemented 2443 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2281 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 48 output pins
     Info (21060): Implemented 8 bidirectional pins
-    Info (21061): Implemented 2076 logic cells
+    Info (21061): Implemented 1914 logic cells
     Info (21064): Implemented 304 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
-    Info: Peak virtual memory: 4951 megabytes
-    Info: Processing ended: Sat Sep 13 17:56:09 2025
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:43
+    Info: Peak virtual memory: 4888 megabytes
+    Info: Processing ended: Tue Sep 16 14:44:47 2025
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:38
 
 

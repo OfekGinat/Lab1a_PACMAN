@@ -13,7 +13,7 @@ module	back_ground_draw	(
 					output	logic		boardersDrawReq 
 );
 
-const int	xFrameSize	=	635;
+const int	xFrameSize	=	635;  //
 const int	yFrameSize	=	475;
 const int	bracketOffset =	32;
 const int   COLOR_MARTIX_SIZE  = 16*8 ; // 128 
@@ -72,7 +72,7 @@ begin
 						((pixelX >= (xFrameSize-bracketOffset))&&(pixelX <= (xFrameSize-(bracketOffset- bracketOffset/4)))) || 
 						((pixelY >= (yFrameSize-bracketOffset))&&(pixelY <= (yFrameSize-(bracketOffset- bracketOffset/4))))) 
 			begin 
-					redBits <= LIGHT_COLOR ;	
+					redBits <= DARK_COLOR ;	 //LIGHT_COLOR
 					greenBits <= DARK_COLOR  ;	
 					blueBits <= DARK_COLOR ;
 					 boardersDrawReq <= 	1'b1;
