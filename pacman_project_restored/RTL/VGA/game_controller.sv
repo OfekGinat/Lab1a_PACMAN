@@ -8,8 +8,8 @@ module	game_controller	(
 			input	logic	resetN,
 			input	logic	startOfFrame,  // short pulse every start of frame 30Hz 
 			input	logic	drawing_request_smiley,
-			input	logic	drawing_request_boarders,
-			input logic number_drawing_request,
+			//input	logic	drawing_request_boarders,
+			input logic drawing_request_wood,
 
 //---------------------#1-add input drawing request of box/number
 		
@@ -51,14 +51,14 @@ module	game_controller	(
 // drawing_request_number   -->  number/box 
 
 logic flag ; // a semaphore to set the output only once per frame regardless of number of collisions 
-logic collision_smiley_number; // collision between Smiley and number - is not output
+logic collision_smiley_wood; // collision between Smiley and number - is not output
 
 //assign collision = (drawing_request_smiley && drawing_request_boarders);// any collision --> comment after updating with #4 or #5 
 
 //---------------------#4-update  collision  conditions - add collision between smiley and number   ----------------------------
-assign collision_smiley_number = (drawing_request_smiley && number_drawing_request);
+assign collision_smiley_wood = (drawing_request_smiley && drawing_request_wood);
 
-assign collision = ((drawing_request_smiley && drawing_request_boarders) || collision_smiley_number);
+assign collision = collision_smiley_wood;
 
 //---------------------#4-end update  collision  conditions	 - add collision between smiley and number	-------------------------
 	
@@ -105,9 +105,9 @@ begin
 		if(startOfFrame) 
 			flag <= 1'b0 ; // reset for next time 
 				
-//	---#7 - change the condition below to collision between Smiley and number ---------
+//	---#7 - change the condition below to collision between Smiley and wood ---------
 
-		if ( collision_smiley_number  && (flag == 1'b0)) begin 
+		if ( collision_smiley_wood  && (flag == 1'b0)) begin 
 			flag	<= 1'b1; // to enter only once 
 			SingleHitPulse <= 1'b1 ; 
 		end ; 
