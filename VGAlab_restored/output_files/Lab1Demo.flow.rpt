@@ -1,5 +1,9 @@
 Flow report for Lab1Demo
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.flow.rpt
 Fri Sep 19 23:11:29 2025
+=======
+Thu Sep 18 12:38:17 2025
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.flow.rpt
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,15 +45,24 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.flow.rpt
 ; Flow Status                     ; Successful - Fri Sep 19 23:11:16 2025       ;
+=======
+; Flow Status                     ; Successful - Thu Sep 18 12:38:08 2025       ;
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.flow.rpt
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; Lab1Demo                                    ;
 ; Top-level Entity Name           ; TOP_VGA_DEMO_KBD                            ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSXFC6D6F31C6                              ;
 ; Timing Models                   ; Final                                       ;
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.flow.rpt
 ; Logic utilization (in ALMs)     ; 821 / 41,910 ( 2 % )                        ;
 ; Total registers                 ; 564                                         ;
+=======
+; Logic utilization (in ALMs)     ; 773 / 41,910 ( 2 % )                        ;
+; Total registers                 ; 604                                         ;
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.flow.rpt
 ; Total pins                      ; 62 / 499 ( 12 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 2,457,600 / 5,662,720 ( 43 % )              ;
@@ -68,7 +81,11 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.flow.rpt
 ; Start date & time ; 09/19/2025 23:09:26 ;
+=======
+; Start date & time ; 09/18/2025 12:36:23 ;
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.flow.rpt
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab1Demo            ;
 +-------------------+---------------------+
@@ -79,8 +96,12 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+------------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name      ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+------------------+------------+
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.flow.rpt
 ; COMPILER_SIGNATURE_ID               ; 220812855576369.175831256614548        ; --            ; --               ; --         ;
 ; ENABLE_SIGNALTAP                    ; On                                     ; --            ; --               ; --         ;
+=======
+; COMPILER_SIGNATURE_ID               ; 5025761722660.175818818318072          ; --            ; --               ; --         ;
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.flow.rpt
 ; MISC_FILE                           ; RTL/VGA/valX.bsf                       ; --            ; --               ; --         ;
 ; MISC_FILE                           ; RTL/VGA/valX_inst.v                    ; --            ; --               ; --         ;
 ; MISC_FILE                           ; RTL/VGA/valX_bb.v                      ; --            ; --               ; --         ;
@@ -105,11 +126,19 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.flow.rpt
 ; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 4887 MB             ; 00:00:32                           ;
 ; Fitter                    ; 00:01:13     ; 1.1                     ; 6739 MB             ; 00:02:46                           ;
 ; Assembler                 ; 00:00:15     ; 1.0                     ; 4877 MB             ; 00:00:15                           ;
 ; TimeQuest Timing Analyzer ; 00:00:12     ; 1.8                     ; 5226 MB             ; 00:00:20                           ;
 ; Total                     ; 00:01:58     ; --                      ; --                  ; 00:03:53                           ;
+=======
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 4904 MB             ; 00:00:21                           ;
+; Fitter                    ; 00:01:15     ; 1.1                     ; 6849 MB             ; 00:04:13                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 4882 MB             ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:08     ; 2.0                     ; 5256 MB             ; 00:00:14                           ;
+; Total                     ; 00:01:50     ; --                      ; --                  ; 00:04:56                           ;
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.flow.rpt
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -118,10 +147,10 @@ agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; Ofek-PC          ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; Ofek-PC          ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; Ofek-PC          ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; Ofek-PC          ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; ece-206-s2       ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; ece-206-s2       ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; ece-206-s2       ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; ece-206-s2       ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 

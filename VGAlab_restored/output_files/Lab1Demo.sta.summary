@@ -3,11 +3,19 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.sta.summary
 Slack : 15.078
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
 Slack : 0.224
+=======
+Slack : 17.974
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.247
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.sta.summary
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -19,6 +27,7 @@ Slack : 9.900
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.sta.summary
 Slack : 14.640
 TNS   : 0.000
 
@@ -28,6 +37,17 @@ TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
 Slack : 0.216
+=======
+Slack : 14.637
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 18.240
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.234
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.sta.summary
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -43,7 +63,11 @@ Slack : 14.619
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.sta.summary
 Slack : 20.646
+=======
+Slack : 23.026
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.sta.summary
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
@@ -63,11 +87,19 @@ Slack : 14.759
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.sta.summary
 Slack : 21.956
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
 Slack : 0.121
+=======
+Slack : 23.937
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.131
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.sta.summary
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'

@@ -1,12 +1,21 @@
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.fit.summary
 Fitter Status : Successful - Fri Sep 19 23:10:58 2025
+=======
+Fitter Status : Successful - Thu Sep 18 12:37:54 2025
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.fit.summary
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : Lab1Demo
 Top-level Entity Name : TOP_VGA_DEMO_KBD
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.fit.summary
 Logic utilization (in ALMs) : 821 / 41,910 ( 2 % )
 Total registers : 564
+=======
+Logic utilization (in ALMs) : 773 / 41,910 ( 2 % )
+Total registers : 604
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.fit.summary
 Total pins : 62 / 499 ( 12 % )
 Total virtual pins : 0
 Total block memory bits : 2,457,600 / 5,662,720 ( 43 % )

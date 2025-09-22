@@ -55,8 +55,13 @@ agreement for further details.
 	(port
 		(pt 0 96)
 		(input)
+<<<<<<< HEAD:VGAlab_restored/game_controller.bsf
 		(text "HartDrawingRequest" (rect 0 0 83 12)(font "Arial" ))
 		(text "HartDrawingRequest" (rect 21 91 104 103)(font "Arial" ))
+=======
+		(text "drawing_request_wood" (rect 0 0 90 12)(font "Arial" ))
+		(text "drawing_request_wood" (rect 21 91 111 103)(font "Arial" ))
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/game_controller.bsf
 		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port

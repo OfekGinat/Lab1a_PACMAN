@@ -567,7 +567,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect -248 680 56 872)
+	(rect -248 664 56 856)
 	(text "HART_DISPLAY" (rect 5 0 99 19)(font "Intel Clear" (font_size 8)))
 	(text "inst12" (rect 8 171 36 188)(font "Intel Clear" ))
 	(port
@@ -715,48 +715,6 @@ agreement for further details.
 	(annotation_block (parameter)(rect 608 1024 816 1062))
 )
 (symbol
-	(rect -24 80 24 112)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst3" (rect 3 21 26 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
-(symbol
-	(rect 1280 1248 1312 1280)
-	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
-	(text "inst6" (rect 3 21 26 33)(font "Arial" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
-		(line (pt 16 8)(pt 16 0))
-	)
-	(drawing
-		(line (pt 8 8)(pt 16 16))
-		(line (pt 16 16)(pt 24 8))
-		(line (pt 8 8)(pt 24 8))
-	)
-)
-(symbol
 	(rect -376 1040 -216 1120)
 	(text "MyConstant" (rect 5 0 65 12)(font "Arial" ))
 	(text "inst2" (rect 8 64 30 81)(font "Intel Clear" ))
@@ -783,6 +741,7 @@ agreement for further details.
 	(annotation_block (parameter)(rect -584 1040 -415 1097))
 )
 (symbol
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 	(rect -384 824 -352 856)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst14" (rect 3 21 31 38)(font "Intel Clear" )(invisible))
@@ -800,6 +759,8 @@ agreement for further details.
 	)
 )
 (symbol
+=======
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 	(rect 1088 792 1312 952)
 	(text "AUDIO" (rect 5 0 45 19)(font "Intel Clear" (font_size 8)))
 	(text "inst18" (rect 8 139 36 156)(font "Intel Clear" ))
@@ -1060,12 +1021,19 @@ agreement for further details.
 	(annotation_block (parameter)(rect -360 1128 -105 1204))
 )
 (symbol
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 	(rect 560 104 736 328)
 	(text "Smiley_Block_T" (rect 5 0 100 19)(font "Intel Clear" (font_size 8)))
 	(text "inst1" (rect 8 203 30 220)(font "Intel Clear" ))
+=======
+	(rect -24 80 24 112)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst3" (rect 3 21 26 33)(font "Arial" ))
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 	(port
-		(pt 0 32)
+		(pt 0 16)
 		(input)
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 		(text "pixelX[10..0]" (rect 0 0 55 17)(font "Intel Clear" (font_size 6)))
 		(text "pixelX[10..0]" (rect 21 27 76 44)(font "Intel Clear" (font_size 6)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
@@ -1139,6 +1107,18 @@ agreement for further details.
 		(text "smileyDR" (rect 0 0 40 17)(font "Intel Clear" (font_size 6)))
 		(text "smileyDR" (rect 115 27 155 44)(font "Intel Clear" (font_size 6)))
 		(line (pt 176 32)(pt 160 32))
+=======
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 	)
 	(port
 		(pt 176 48)
@@ -1168,7 +1148,65 @@ agreement for further details.
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 		(rectangle (rect 16 16 160 208))
+=======
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 1280 1248 1312 1280)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst6" (rect 3 21 26 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect -384 824 -352 856)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst14" (rect 3 21 32 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 368 552 400 584)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst8" (rect 3 21 26 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 	)
 	(annotation_block (parameter)(rect 712 -8 906 87))
 )
@@ -1276,12 +1314,134 @@ agreement for further details.
 		(line (pt 96 80)(pt 96 16))
 		(line (pt 16 80)(pt 16 16))
 	)
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 	(annotation_block (parameter)(rect -816 32 -510 260))
 )
 (symbol
 	(rect 560 352 808 528)
 	(text "objects_mux" (rect 5 0 67 12)(font "Arial" ))
 	(text "inst9" (rect 8 160 31 172)(font "Arial" ))
+=======
+	(annotation_block (parameter)(rect -856 -40 -550 188))
+)
+(symbol
+	(rect 584 88 760 312)
+	(text "Smiley_Block_T" (rect 5 0 100 19)(font "Intel Clear" (font_size 8)))
+	(text "inst22" (rect 8 203 36 220)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 55 17)(font "Intel Clear" (font_size 6)))
+		(text "pixelX[10..0]" (rect 21 27 76 44)(font "Intel Clear" (font_size 6)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 55 17)(font "Intel Clear" (font_size 6)))
+		(text "pixelY[10..0]" (rect 21 43 76 60)(font "Intel Clear" (font_size 6)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clk" (rect 0 0 11 17)(font "Intel Clear" (font_size 6)))
+		(text "clk" (rect 21 59 32 76)(font "Intel Clear" (font_size 6)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "resetN" (rect 0 0 28 17)(font "Intel Clear" (font_size 6)))
+		(text "resetN" (rect 21 75 49 92)(font "Intel Clear" (font_size 6)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "startOfFrame" (rect 0 0 56 17)(font "Intel Clear" (font_size 6)))
+		(text "startOfFrame" (rect 21 91 77 108)(font "Intel Clear" (font_size 6)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "up_8" (rect 0 0 22 17)(font "Intel Clear" (font_size 6)))
+		(text "up_8" (rect 21 107 43 124)(font "Intel Clear" (font_size 6)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "down_2" (rect 0 0 35 17)(font "Intel Clear" (font_size 6)))
+		(text "down_2" (rect 21 123 56 140)(font "Intel Clear" (font_size 6)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "right_6" (rect 0 0 30 17)(font "Intel Clear" (font_size 6)))
+		(text "right_6" (rect 21 139 51 156)(font "Intel Clear" (font_size 6)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "left_4" (rect 0 0 24 17)(font "Intel Clear" (font_size 6)))
+		(text "left_4" (rect 21 155 45 172)(font "Intel Clear" (font_size 6)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "collision " (rect 0 0 38 17)(font "Intel Clear" (font_size 6)))
+		(text "collision " (rect 21 171 59 188)(font "Intel Clear" (font_size 6)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "smileyDR" (rect 0 0 40 17)(font "Intel Clear" (font_size 6)))
+		(text "smileyDR" (rect 115 27 155 44)(font "Intel Clear" (font_size 6)))
+		(line (pt 176 32)(pt 160 32))
+	)
+	(port
+		(pt 176 48)
+		(output)
+		(text "smileyRGB[7..0]" (rect 0 0 68 17)(font "Intel Clear" (font_size 6)))
+		(text "smileyRGB[7..0]" (rect 87 43 155 60)(font "Intel Clear" (font_size 6)))
+		(line (pt 176 48)(pt 160 48)(line_width 3))
+	)
+	(parameter
+		"initial_x"
+		"100"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"initial_y"
+		"100"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"initial_x_speed"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"initial_y_speed"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 160 208))
+	)
+	(annotation_block (parameter)(rect 760 -8 954 87))
+)
+(symbol
+	(rect 352 464 384 496)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst23" (rect 3 21 31 38)(font "Intel Clear" )(invisible))
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 	(port
 		(pt 0 32)
 		(input)
@@ -1451,6 +1611,115 @@ agreement for further details.
 		(rectangle (rect 16 16 240 128))
 	)
 )
+(symbol
+	(rect 544 616 800 760)
+	(text "game_controller" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst11" (rect 8 128 37 140)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "startOfFrame" (rect 0 0 67 12)(font "Arial" ))
+		(text "startOfFrame" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "drawing_request_smiley" (rect 0 0 118 12)(font "Arial" ))
+		(text "drawing_request_smiley" (rect 21 75 139 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "drawing_request_wood" (rect 0 0 109 12)(font "Arial" ))
+		(text "drawing_request_wood" (rect 21 91 130 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "collision" (rect 0 0 38 12)(font "Arial" ))
+		(text "collision" (rect 203 27 235 39)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32))
+	)
+	(port
+		(pt 256 48)
+		(output)
+		(text "SingleHitPulse" (rect 0 0 70 12)(font "Arial" ))
+		(text "SingleHitPulse" (rect 176 43 235 55)(font "Arial" ))
+		(line (pt 256 48)(pt 240 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 128))
+	)
+)
+(symbol
+	(rect -648 656 -488 736)
+	(text "MyConstant" (rect 5 0 65 12)(font "Arial" ))
+	(text "inst20" (rect 8 64 36 81)(font "Intel Clear" ))
+	(port
+		(pt 160 32)
+		(output)
+		(text "value[size-1..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "value[size-1..0]" (rect 76 27 151 39)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(parameter
+		"size"
+		"11"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MyValue"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 144 64))
+	)
+	(annotation_block (parameter)(rect -832 632 -663 689))
+)
+(symbol
+	(rect -648 760 -488 840)
+	(text "MyConstant" (rect 5 0 65 12)(font "Arial" ))
+	(text "inst21" (rect 8 64 36 81)(font "Intel Clear" ))
+	(port
+		(pt 160 32)
+		(output)
+		(text "value[size-1..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "value[size-1..0]" (rect 76 27 151 39)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(parameter
+		"size"
+		"11"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MyValue"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 144 64))
+	)
+	(annotation_block (parameter)(rect -832 752 -663 809))
+)
 (connector
 	(text "clk" (rect 536 1088 550 1105)(font "Intel Clear" ))
 	(pt 600 1104)
@@ -1600,22 +1869,6 @@ agreement for further details.
 	(pt -32 96)
 )
 (connector
-	(text "collision_Smiley_Hart" (rect -350 808 -247 825)(font "Intel Clear" ))
-	(pt -368 824)
-	(pt -248 824)
-)
-(connector
-	(text "HartDrawingRequest" (rect 66 696 163 713)(font "Intel Clear" ))
-	(pt 56 712)
-	(pt 160 712)
-)
-(connector
-	(text "hartRGB[7..0]" (rect 66 712 129 729)(font "Intel Clear" ))
-	(pt 56 728)
-	(pt 160 728)
-	(bus)
-)
-(connector
 	(text "MIF_VGA[7..0]" (rect -622 304 -554 321)(font "Intel Clear" ))
 	(pt -624 320)
 	(pt -520 320)
@@ -1672,49 +1925,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt -248 792)
-	(pt -488 792)
-	(bus)
-)
-(connector
-	(text "clk" (rect -336 696 -322 713)(font "Intel Clear" ))
-	(pt -248 712)
-	(pt -440 712)
-)
-(connector
-	(text "resetN" (rect -334 712 -304 729)(font "Intel Clear" ))
-	(pt -248 728)
-	(pt -440 728)
-)
-(connector
-	(text "pixelX[10..0]" (rect -334 728 -275 745)(font "Intel Clear" ))
-	(pt -248 744)
-	(pt -440 744)
-	(bus)
-)
-(connector
-	(text "pixelY[10..0]" (rect -334 744 -275 761)(font "Intel Clear" ))
-	(pt -248 760)
-	(pt -440 760)
-	(bus)
-)
-(connector
-	(text "keypadValid" (rect -358 792 -298 809)(font "Intel Clear" ))
-	(pt -248 808)
-	(pt -440 808)
-)
-(connector
-	(pt -248 776)
-	(pt -464 776)
-	(bus)
-)
-(connector
 	(pt -488 688)
-	(pt -464 688)
-	(bus)
-)
-(connector
-	(pt -464 776)
 	(pt -464 688)
 	(bus)
 )
@@ -1827,6 +2038,64 @@ agreement for further details.
 	(bus)
 )
 (connector
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
+=======
+	(pt 816 384)
+	(pt 816 392)
+	(bus)
+)
+(connector
+	(pt 880 384)
+	(pt 816 384)
+	(bus)
+)
+(connector
+	(text "RGB[7..0]" (rect 820 376 864 393)(font "Intel Clear" ))
+	(pt 816 392)
+	(pt 808 392)
+	(bus)
+)
+(connector
+	(text "clk" (rect 488 376 502 393)(font "Intel Clear" ))
+	(pt 440 392)
+	(pt 560 392)
+)
+(connector
+	(text "resetN" (rect 480 392 513 404)(font "Arial" ))
+	(pt 440 408)
+	(pt 560 408)
+)
+(connector
+	(text "smileyDR" (rect 450 408 496 425)(font "Intel Clear" ))
+	(pt 440 424)
+	(pt 560 424)
+)
+(connector
+	(text "smileyRGB[7..0]" (rect 452 424 528 441)(font "Intel Clear" ))
+	(pt 440 440)
+	(pt 560 440)
+	(bus)
+)
+(connector
+	(text "MIF_VGA[7..0]" (rect 450 536 518 553)(font "Intel Clear" ))
+	(pt 560 552)
+	(pt 440 552)
+	(bus)
+)
+(connector
+	(text "BG_RGB[7..0]" (rect 458 504 522 521)(font "Intel Clear" ))
+	(pt 440 520)
+	(pt 560 520)
+	(bus)
+)
+(connector
+	(text "hartRGB[7..0]" (rect 458 488 521 505)(font "Intel Clear" ))
+	(pt 440 504)
+	(pt 560 504)
+	(bus)
+)
+(connector
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 	(text "clk" (rect -152 1280 -138 1297)(font "Intel Clear" ))
 	(pt -64 1296)
 	(pt -256 1296)
@@ -1912,11 +2181,104 @@ agreement for further details.
 	(bus)
 )
 (connector
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
+=======
+	(text "RGBNum[7..0]" (rect 458 456 525 473)(font "Intel Clear" ))
+	(pt 440 472)
+	(pt 560 472)
+	(bus)
+)
+(connector
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 	(text "singleHit" (rect -238 1312 -197 1329)(font "Intel Clear" ))
 	(pt -64 1328)
 	(pt -240 1328)
 )
 (connector
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
+=======
+	(text "boxDrawingRequest" (rect -360 1256 -266 1273)(font "Intel Clear" ))
+	(pt -360 1272)
+	(pt -328 1272)
+)
+(connector
+	(pt 384 536)
+	(pt 560 536)
+)
+(connector
+	(pt 384 552)
+	(pt 384 536)
+)
+(connector
+	(text "pixelX[10..0]" (rect 506 104 566 116)(font "Arial" ))
+	(pt 472 120)
+	(pt 584 120)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect 506 120 568 132)(font "Arial" ))
+	(pt 472 136)
+	(pt 584 136)
+	(bus)
+)
+(connector
+	(text "clk" (rect 482 136 496 153)(font "Intel Clear" ))
+	(pt 472 152)
+	(pt 584 152)
+)
+(connector
+	(text "resetN" (rect 482 152 512 169)(font "Intel Clear" ))
+	(pt 472 168)
+	(pt 584 168)
+)
+(connector
+	(text "startOfFrame" (rect 482 168 545 185)(font "Intel Clear" ))
+	(pt 472 184)
+	(pt 584 184)
+)
+(connector
+	(text "collision" (rect 482 248 520 265)(font "Intel Clear" ))
+	(pt 472 264)
+	(pt 584 264)
+)
+(connector
+	(text "keyIsPressed[8]" (rect 484 184 559 201)(font "Intel Clear" ))
+	(pt 472 200)
+	(pt 584 200)
+)
+(connector
+	(text "keyIsPressed[2]" (rect 482 200 557 217)(font "Intel Clear" ))
+	(pt 584 216)
+	(pt 472 216)
+)
+(connector
+	(text "keyIsPressed[6]" (rect 482 216 557 233)(font "Intel Clear" ))
+	(pt 584 232)
+	(pt 472 232)
+)
+(connector
+	(text "keyIsPressed[4]" (rect 482 232 557 249)(font "Intel Clear" ))
+	(pt 584 248)
+	(pt 472 248)
+)
+(connector
+	(text "smileyDR" (rect 818 104 864 121)(font "Intel Clear" ))
+	(pt 760 120)
+	(pt 896 120)
+)
+(connector
+	(text "smileyRGB[7..0]" (rect 810 120 886 137)(font "Intel Clear" ))
+	(pt 760 136)
+	(pt 944 136)
+	(bus)
+)
+(connector
+	(text "HartDrawingRequest" (rect 458 472 555 489)(font "Intel Clear" ))
+	(pt 440 488)
+	(pt 560 488)
+)
+(connector
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 	(text "clk" (rect 472 632 486 649)(font "Intel Clear" ))
 	(pt 424 648)
 	(pt 544 648)
@@ -1937,6 +2299,7 @@ agreement for further details.
 	(pt 544 696)
 )
 (connector
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 	(text "boxDrawingRequest" (rect -360 1256 -266 1273)(font "Intel Clear" ))
 	(pt -360 1272)
 	(pt -328 1272)
@@ -2070,6 +2433,101 @@ agreement for further details.
 	(text "singleHit" (rect 823 648 864 665)(font "Intel Clear" ))
 	(pt 800 664)
 	(pt 904 664)
+=======
+	(text "HartDrawingRequest" (rect 440 696 537 713)(font "Intel Clear" ))
+	(pt 424 712)
+	(pt 544 712)
+)
+(connector
+	(text "collision" (rect 824 632 862 649)(font "Intel Clear" ))
+	(pt 800 648)
+	(pt 904 648)
+)
+(connector
+	(text "singleHit" (rect 823 648 864 665)(font "Intel Clear" ))
+	(pt 800 664)
+	(pt 904 664)
+)
+(connector
+	(pt 368 456)
+	(pt 368 464)
+)
+(connector
+	(pt 368 456)
+	(pt 560 456)
+)
+(connector
+	(pt -488 792)
+	(pt -480 792)
+	(bus)
+)
+(connector
+	(pt -368 824)
+	(pt -368 808)
+)
+(connector
+	(text "collision_Smiley_Hart" (rect -350 792 -247 809)(font "Intel Clear" ))
+	(pt -368 808)
+	(pt -248 808)
+)
+(connector
+	(text "HartDrawingRequest" (rect 66 680 163 697)(font "Intel Clear" ))
+	(pt 56 696)
+	(pt 160 696)
+)
+(connector
+	(text "hartRGB[7..0]" (rect 66 696 129 713)(font "Intel Clear" ))
+	(pt 56 712)
+	(pt 160 712)
+	(bus)
+)
+(connector
+	(pt -480 792)
+	(pt -480 776)
+	(bus)
+)
+(connector
+	(pt -480 776)
+	(pt -248 776)
+	(bus)
+)
+(connector
+	(text "clk" (rect -336 680 -322 697)(font "Intel Clear" ))
+	(pt -248 696)
+	(pt -440 696)
+)
+(connector
+	(text "resetN" (rect -334 696 -304 713)(font "Intel Clear" ))
+	(pt -248 712)
+	(pt -440 712)
+)
+(connector
+	(text "pixelX[10..0]" (rect -334 712 -275 729)(font "Intel Clear" ))
+	(pt -248 728)
+	(pt -440 728)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect -334 728 -275 745)(font "Intel Clear" ))
+	(pt -248 744)
+	(pt -440 744)
+	(bus)
+)
+(connector
+	(text "keypadValid" (rect -358 776 -298 793)(font "Intel Clear" ))
+	(pt -248 792)
+	(pt -440 792)
+)
+(connector
+	(pt -464 760)
+	(pt -248 760)
+	(bus)
+)
+(connector
+	(pt -464 688)
+	(pt -464 760)
+	(bus)
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 )
 (junction (pt 1296 1232))
 (junction (pt 1296 1248))

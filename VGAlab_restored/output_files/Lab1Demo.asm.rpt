@@ -1,5 +1,9 @@
 Assembler report for Lab1Demo
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.asm.rpt
 Fri Sep 19 23:11:16 2025
+=======
+Thu Sep 18 12:38:08 2025
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.asm.rpt
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -10,7 +14,11 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.asm.rpt
   5. Assembler Device Options: C:/Users/ginat/Documents/new/VGAlab_restored/output_files/Lab1Demo.sof
+=======
+  5. Assembler Device Options: C:/Users/ofek.zur/Documents/123/pacman_project_restored/output_files/Lab1Demo.sof
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.asm.rpt
   6. Assembler Messages
 
 
@@ -38,7 +46,11 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.asm.rpt
 ; Assembler Status      ; Successful - Fri Sep 19 23:11:16 2025 ;
+=======
+; Assembler Status      ; Successful - Thu Sep 18 12:38:08 2025 ;
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.asm.rpt
 ; Revision Name         ; Lab1Demo                              ;
 ; Top-level Entity Name ; TOP_VGA_DEMO_KBD                      ;
 ; Family                ; Cyclone V                             ;
@@ -53,6 +65,7 @@ agreement for further details.
 +--------+---------+---------------+
 
 
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.asm.rpt
 +------------------------------------------------------------------------+
 ; Assembler Generated Files                                              ;
 +------------------------------------------------------------------------+
@@ -70,6 +83,25 @@ agreement for further details.
 ; JTAG usercode  ; 0x05850F81                                                                      ;
 ; Checksum       ; 0x05850F81                                                                      ;
 +----------------+---------------------------------------------------------------------------------+
+=======
++-----------------------------------------------------------------------------------+
+; Assembler Generated Files                                                         ;
++-----------------------------------------------------------------------------------+
+; File Name                                                                         ;
++-----------------------------------------------------------------------------------+
+; C:/Users/ofek.zur/Documents/123/pacman_project_restored/output_files/Lab1Demo.sof ;
++-----------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/ofek.zur/Documents/123/pacman_project_restored/output_files/Lab1Demo.sof ;
++----------------+--------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                    ;
++----------------+--------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0583CE53                                                                                 ;
+; Checksum       ; 0x0583CE53                                                                                 ;
++----------------+--------------------------------------------------------------------------------------------+
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.asm.rpt
 
 
 +--------------------+
@@ -78,6 +110,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.asm.rpt
     Info: Processing started: Fri Sep 19 23:11:01 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Lab1Demo -c Lab1Demo
 Info (115030): Assembler is generating device programming files
@@ -86,5 +119,15 @@ Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
     Info: Processing ended: Fri Sep 19 23:11:16 2025
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:15
+=======
+    Info: Processing started: Thu Sep 18 12:37:56 2025
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Lab1Demo -c Lab1Demo
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4882 megabytes
+    Info: Processing ended: Thu Sep 18 12:38:08 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:08
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.asm.rpt
 
 

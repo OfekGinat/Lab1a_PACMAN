@@ -1,10 +1,18 @@
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.map.summary
 Analysis & Synthesis Status : Successful - Fri Sep 19 23:09:44 2025
+=======
+Analysis & Synthesis Status : Successful - Thu Sep 18 12:36:38 2025
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.map.summary
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : Lab1Demo
 Top-level Entity Name : TOP_VGA_DEMO_KBD
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.map.summary
 Total registers : 480
+=======
+Total registers : 503
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.map.summary
 Total pins : 62
 Total virtual pins : 0
 Total block memory bits : 2,457,600

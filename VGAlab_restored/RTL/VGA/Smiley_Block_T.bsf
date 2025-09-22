@@ -62,29 +62,49 @@ agreement for further details.
 	(port
 		(pt 0 112)
 		(input)
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/Smiley_Block_T.bsf
 		(text "y_up_8" (rect 0 0 31 17)(font "Intel Clear" (font_size 6)))
 		(text "y_up_8" (rect 21 107 52 124)(font "Intel Clear" (font_size 6)))
+=======
+		(text "up_8" (rect 0 0 22 17)(font "Intel Clear" (font_size 6)))
+		(text "up_8" (rect 21 107 43 124)(font "Intel Clear" (font_size 6)))
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/Smiley_Block_T.bsf
 		(line (pt 0 112)(pt 16 112))
 	)
 	(port
 		(pt 0 128)
 		(input)
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/Smiley_Block_T.bsf
 		(text "y_down_2" (rect 0 0 44 17)(font "Intel Clear" (font_size 6)))
 		(text "y_down_2" (rect 21 123 65 140)(font "Intel Clear" (font_size 6)))
+=======
+		(text "down_2" (rect 0 0 35 17)(font "Intel Clear" (font_size 6)))
+		(text "down_2" (rect 21 123 56 140)(font "Intel Clear" (font_size 6)))
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/Smiley_Block_T.bsf
 		(line (pt 0 128)(pt 16 128))
 	)
 	(port
 		(pt 0 144)
 		(input)
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/Smiley_Block_T.bsf
 		(text "x_right_6" (rect 0 0 40 17)(font "Intel Clear" (font_size 6)))
 		(text "x_right_6" (rect 21 139 61 156)(font "Intel Clear" (font_size 6)))
+=======
+		(text "right_6" (rect 0 0 30 17)(font "Intel Clear" (font_size 6)))
+		(text "right_6" (rect 21 139 51 156)(font "Intel Clear" (font_size 6)))
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/Smiley_Block_T.bsf
 		(line (pt 0 144)(pt 16 144))
 	)
 	(port
 		(pt 0 160)
 		(input)
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/Smiley_Block_T.bsf
 		(text "x_left_4" (rect 0 0 34 17)(font "Intel Clear" (font_size 6)))
 		(text "x_left_4" (rect 21 155 55 172)(font "Intel Clear" (font_size 6)))
+=======
+		(text "left_4" (rect 0 0 24 17)(font "Intel Clear" (font_size 6)))
+		(text "left_4" (rect 21 155 45 172)(font "Intel Clear" (font_size 6)))
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/Smiley_Block_T.bsf
 		(line (pt 0 160)(pt 16 160))
 	)
 	(port
@@ -119,6 +139,7 @@ agreement for further details.
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
+<<<<<<< HEAD:VGAlab_restored/RTL/VGA/Smiley_Block_T.bsf
 		"initial_y_speed"
 		"0"
 		""
@@ -126,6 +147,15 @@ agreement for further details.
 	(parameter
 		"initial_x_speed"
 		"0"
+=======
+		"initial_x_speed"
+		"60"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"initial_y_speed"
+		"20"
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/RTL/VGA/Smiley_Block_T.bsf
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing

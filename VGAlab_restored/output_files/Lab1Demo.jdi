@@ -1,6 +1,10 @@
 <sld_project_info>
   <project>
+<<<<<<< HEAD:VGAlab_restored/output_files/Lab1Demo.jdi
     <hash md5_digest_80b="3c25e66fc2b659b621c0"/>
+=======
+    <hash md5_digest_80b="a76fa1d9446e564b5fee"/>
+>>>>>>> 23d038f788d88de36276b5f810f452230de3a497:pacman_project_restored/output_files/Lab1Demo.jdi
   </project>
   <file_info>
     <file device="5CSXFC6D6F31C6" path="Lab1Demo.sof" usercode="0xFFFFFFFF"/>
